@@ -1,7 +1,7 @@
-import { genkit } from '@/ai/genkit';
+import { ai } from '@/ai/genkit';
 import { GenkitError } from '@genkit-ai/core';
 
-export const { GET, POST } = genkit.getAPIHandler({
+export const { GET, POST } = ai.getAPIHandler({
   // This is necessary if you are running Genkit in a different environment
   // from your web app.
   allowCors: true,
